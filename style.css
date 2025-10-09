@@ -14,6 +14,7 @@
     --color-cinzaArmado: #4a4a4a;
     --color-verdeMilitar: #556b2f;
     --color-bronzeMetalico: #b08d57;
+    --color-cinzaFundoCard: rgb(236, 235, 233);
 }
 
 body {
@@ -47,7 +48,7 @@ section {
     display: flex;
     flex-direction: column;
     border: none;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 .containerImgLicenca {
     max-width: 1080px;
@@ -107,7 +108,7 @@ section {
     border: 1px solid;
     border-radius: 8px;
     padding: 10px;
-    background-color: rgb(228, 227, 225);
+    background-color: var(--color-cinzaFundoCard);
 }
 .iconCategory img {
     width: 60px;
@@ -122,10 +123,110 @@ section {
     font-size: 16px;
 }
 
+.endLocal div {
+    font-size: 16px;
+}
+
 /* BOTÃO WHATSAPP */
 .botaoWhatsapp img {
     width: 50px;
     position: fixed;
     bottom: 20px;
     right: 20px;
+}
+
+/* SLIDER */
+.slider {
+    margin: 0 auto;
+    height: 350px;
+    width: 350px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 400%;
+    height: 350px;
+    display: flex;
+}
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 66.6%;
+    position: relative;
+}
+.slide img {
+    width: 350px;
+}
+
+.manualNavigation {
+    position: absolute;
+    width: 350px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.manualBtn {
+    border: 1.8px solid var(--color-brancoAlvo);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+/* .manualBtn:not(:last-child){
+    margin-right: 10px;
+} */
+.manualBtn:hover {
+    background-color: var(--color-brancoAlvo);
+}
+
+#radio01:checked ~ .first {
+    margin-left: 0;
+}
+#radio02:checked ~ .first {
+    margin-left: -25%;
+}
+#radio03:checked ~ .first {
+    margin-left: -50%;
+}
+#radio04:checked ~ .first {
+    margin-left: -100%;
+}
+#radio05:checked ~ .first {
+    margin-left: -200%;
+}
+#radio06:checked ~ .first {
+    margin-left: -333%;
+}
+
+.navigationAuto div {
+    border: 1.8px solid var(--color-verdeMilitar);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+.navigationAuto {
+    position: absolute;
+    width: 350px;
+    margin-top: 310px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+}
+/* .navigationAuto div:not(:last-child){
+    margin-right: 10px;
+} */
+
+
+/* FOOTER */
+footer{  
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+footer p{
+    margin: 5px 0;
 }
