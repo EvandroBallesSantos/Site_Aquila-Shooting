@@ -61,11 +61,6 @@ section {
     padding-bottom: 15px;
 }
 
-.licenca01 {
-    font-size: 68px;
-    background-color: var(--color-begeTatico);
-    border-radius: 6px;
-}
 .licenca02 {
     font-size: 28px;
     line-height: .9;
@@ -107,6 +102,7 @@ section {
     width: 350px;
     border: 1px solid;
     border-radius: 8px;
+    box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.5);
     padding: 10px;
     background-color: var(--color-cinzaFundoCard);
 }
@@ -143,6 +139,7 @@ section {
     overflow: hidden;
     border-radius: 8px;
     border: 1px solid;
+    box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.5);
 }
 
 .slides {
