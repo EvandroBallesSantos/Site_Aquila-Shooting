@@ -141,10 +141,13 @@ section {
     height: 350px;
     width: 350px;
     overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid;
 }
 
 .slides {
-    width: 400%;
+    width: 350px;
+    /* width: 400%; */
     height: 350px;
     display: flex;
 }
@@ -153,8 +156,9 @@ section {
 }
 
 .slide {
-    width: 66.6%;
+    /* width: 66.6%; */
     position: relative;
+    transition: .5s;
 }
 .slide img {
     width: 350px;
@@ -175,30 +179,27 @@ section {
     cursor: pointer;
     transition: .5s;
 }
-/* .manualBtn:not(:last-child){
-    margin-right: 10px;
-} */
 .manualBtn:hover {
     background-color: var(--color-brancoAlvo);
 }
 
-#radio01:checked ~ .first {
+#radio1:checked ~ .first {
     margin-left: 0;
 }
-#radio02:checked ~ .first {
-    margin-left: -25%;
+#radio2:checked ~ .first {
+    margin-left: -350px;
 }
-#radio03:checked ~ .first {
-    margin-left: -50%;
+#radio3:checked ~ .first {
+    margin-left: -700px;
 }
-#radio04:checked ~ .first {
-    margin-left: -100%;
+#radio4:checked ~ .first {
+    margin-left: -1050px;
 }
-#radio05:checked ~ .first {
-    margin-left: -200%;
+#radio5:checked ~ .first {
+    margin-left: -1400px;
 }
-#radio06:checked ~ .first {
-    margin-left: -333%;
+#radio6:checked ~ .first {
+    margin-left: -1750px;
 }
 
 .navigationAuto div {
@@ -206,7 +207,7 @@ section {
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
-    transition: .5s;
+    transition: 1s;
 }
 .navigationAuto {
     position: absolute;
@@ -216,9 +217,30 @@ section {
     display: flex;
     justify-content: center;
 }
-/* .navigationAuto div:not(:last-child){
-    margin-right: 10px;
-} */
+#radio1:checked ~ .navigationAuto .autoBtn1{
+    background-color: var(--color-brancoAlvo);
+}
+#radio2:checked ~ .navigationAuto .autoBtn2{
+    background-color: var(--color-brancoAlvo);
+}
+#radio3:checked ~ .navigationAuto .autoBtn3{
+    background-color: var(--color-brancoAlvo);
+}
+#radio4:checked ~ .navigationAuto .autoBtn4{
+    background-color: var(--color-brancoAlvo);
+}
+#radio5:checked ~ .navigationAuto .autoBtn5{
+    background-color: var(--color-brancoAlvo);
+}
+#radio6:checked ~ .navigationAuto .autoBtn6{
+    background-color: var(--color-brancoAlvo);
+}
+
+.endLocal{
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+}
 
 
 /* FOOTER */
