@@ -24,7 +24,7 @@ body {
     align-items: center;
     /* overflow: hidden; */
     background-image: url(./imgs/BackgroundImage01.png);
-    background-size: cover;
+    /* background-size: cover; */
 }
 
 .cabecalho{
@@ -108,7 +108,7 @@ section {
     gap: 8px;
     border: 1px solid;
     border-radius: 8px;
-    box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 4px 4px 4px 1px rgba(255, 255, 255, 0.5);
     padding: 10px;
     background-color: var(--color-cinzaFundoCard);
 }
@@ -141,7 +141,7 @@ section {
     overflow: hidden;
     border-radius: 8px;
     border: 1px solid;
-    box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 4px 4px 4px 1px rgba(255, 255, 255, 0.5);
 }
 
 .slides {
@@ -324,6 +324,10 @@ footer p{
 }
 
 @media screen and (min-width: 1024px) {
+    body{
+        background-size: cover;
+    }
+
     .section01 {
         gap: 50px;
     }
