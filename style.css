@@ -21,7 +21,10 @@ body {
     background-color: var(--color-brancoAlvo);
     display: flex;
     flex-direction: column;
+    align-items: center;
     /* overflow: hidden; */
+    background-image: url(./imgs/BackgroundImage01.png);
+    background-size: cover;
 }
 
 .cabecalho{
@@ -66,6 +69,7 @@ section {
     line-height: .9;
     padding-bottom: 30px;
     text-align: center;
+    color: var(--color-brancoAlvo);
 }
 
 .cargaHoraria {
@@ -74,6 +78,7 @@ section {
     align-items: center;
     justify-content: center;
     line-height: .9;
+    color: var(--color-brancoAlvo);
 }
 .imgCargaHoraria {
     display: flex;
@@ -100,6 +105,7 @@ section {
     align-items: center;
     text-align: center;
     width: 350px;
+    gap: 8px;
     border: 1px solid;
     border-radius: 8px;
     box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.5);
@@ -116,10 +122,6 @@ section {
 }
 .descCard {
     text-align: center;    
-    font-size: 16px;
-}
-
-.endLocal div {
     font-size: 16px;
 }
 
@@ -144,7 +146,6 @@ section {
 
 .slides {
     width: 350px;
-    /* width: 400%; */
     height: 350px;
     display: flex;
 }
@@ -153,7 +154,6 @@ section {
 }
 
 .slide {
-    /* width: 66.6%; */
     position: relative;
     transition: .5s;
 }
@@ -237,6 +237,8 @@ section {
     padding: 15px 0;
     display: flex;
     align-items: center;
+    justify-content: center;
+    color: var(--color-brancoAlvo);
 }
 
 
@@ -245,7 +247,161 @@ footer{
     bottom: 0;
     width: 100%;
     text-align: center;
+    background-color: var(--color-cinzaArmado);
 }
 footer p{
     margin: 5px 0;
+    color: var(--color-brancoAlvo);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* CARDS */
+    .card01 {
+        width: 500px;
+        gap: 10px;
+    }
+    .iconCategory img {
+        width: 75px;
+    }
+    .tituloCard {
+        font-size: 28px;
+        line-height: .9;
+        padding-bottom: 10px;
+    }
+    .descCard {
+        text-align: center;    
+        font-size: 20px;
+    }
+
+    /* SLIDER */
+    .slider {
+        height: 500px;
+        width: 500px;
+    }
+
+    .slides {
+        width: 500px;
+        height: 500px;
+    }
+    .slide img {
+        width: 500px;
+    }
+
+    .manualNavigation {
+        width: 500px;
+    }
+    .manualBtn:hover {
+        background-color: var(--color-brancoAlvo);
+    }
+
+    #radio1:checked ~ .first {
+        margin-left: 0;
+    }
+    #radio2:checked ~ .first {
+        margin-left: -500px;
+    }
+    #radio3:checked ~ .first {
+        margin-left: -1000px;
+    }
+    #radio4:checked ~ .first {
+        margin-left: -1500px;
+    }
+    #radio5:checked ~ .first {
+        margin-left: -2000px;
+    }
+    #radio6:checked ~ .first {
+        margin-left: -2500px;
+    }
+
+    .navigationAuto div {
+        border: 1.8px solid var(--color-verdeMilitar);
+        padding: 5px;
+    }
+    .navigationAuto {
+        width: 500px;
+        margin-top: 460px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .section01 {
+        gap: 50px;
+    }
+    .licenca02{
+        font-size: 40px;
+    }
+    .imgCargaHoraria {
+        width: 100px;
+    }
+    .containerDescriCargaHoraria p {
+        font-size: 30px;
+    }
+
+    /* CARDS */
+    .card01 {
+        width: 600px;
+        gap: 10px;
+        padding: 20px;
+    }
+    .iconCategory img {
+        width: 75px;
+    }
+    .tituloCard {
+        font-size: 32px;
+        line-height: .9;
+        padding-bottom: 10px;
+    }
+    .descCard {
+        text-align: center;    
+        font-size: 22px;
+    }
+
+    /* SLIDER */
+    .slider {
+        height: 600px;
+        width: 600px;
+    }
+
+    .slides {
+        width: 600px;
+        height: 600px;
+    }
+    .slide img {
+        width: 600px;
+    }
+
+    .manualNavigation {
+        width: 600px;
+    }
+    .manualBtn:hover {
+        background-color: var(--color-brancoAlvo);
+    }
+
+    #radio1:checked ~ .first {
+        margin-left: 0;
+    }
+    #radio2:checked ~ .first {
+        margin-left: -600px;
+    }
+    #radio3:checked ~ .first {
+        margin-left: -1200px;
+    }
+    #radio4:checked ~ .first {
+        margin-left: -1800px;
+    }
+    #radio5:checked ~ .first {
+        margin-left: -2400px;
+    }
+    #radio6:checked ~ .first {
+        margin-left: -3000px;
+    }
+
+    .navigationAuto div {
+        border: 1.8px solid var(--color-verdeMilitar);
+        padding: 5px;
+    }
+    .navigationAuto {
+        width: 600px;
+        margin-top: 560px;
+    }    
 }
