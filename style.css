@@ -53,16 +53,16 @@ section {
     border: none;
     padding-bottom: 50px;
 }
-.containerImgLicenca {
-    max-width: 1080px;
-    width: 100%;
-    height: auto;
-}
+
+/* BANNER 01 */
 .containerImgLicenca img {
     max-width: 1080px;
     width: 100%;
     padding-bottom: 15px;
+    clip-path: polygon(80% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
 }
+/* BANNER 01 */
+
 
 .licenca02 {
     font-size: 28px;
@@ -240,6 +240,9 @@ section {
     justify-content: center;
     color: var(--color-brancoAlvo);
 }
+.descEnd{
+    font-size: 15px;
+}
 
 
 /* FOOTER */
@@ -320,6 +323,15 @@ footer p{
     .navigationAuto {
         width: 500px;
         margin-top: 460px;
+    }
+
+    /* BOTÃO WHATSAPP */
+    .botaoWhatsapp img {
+        width: 60px;
+    }
+
+    .descEnd{
+        font-size: 18px;
     }
 }
 
@@ -407,5 +419,14 @@ footer p{
     .navigationAuto {
         width: 600px;
         margin-top: 560px;
-    }    
+    }  
+    
+        /* BOTÃO WHATSAPP */
+    .botaoWhatsapp img {
+        width: 70px;
+    }
+
+    .descEnd{
+        font-size: 22px;
+    }
 }
