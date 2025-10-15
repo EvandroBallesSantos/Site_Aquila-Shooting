@@ -22,9 +22,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* overflow: hidden; */
     background-image: url(./imgs/BackgroundImage01.png);
-    /* background-size: cover; */
+    letter-spacing: .3px;
 }
 
 .cabecalho{
@@ -109,7 +108,7 @@ section {
     border: 1px solid;
     border-radius: 8px;
     box-shadow: 4px 4px 4px 1px rgba(255, 255, 255, 0.5);
-    padding: 10px;
+    padding: 20px;
     background-color: var(--color-cinzaFundoCard);
 }
 .iconCategory img {
@@ -123,6 +122,90 @@ section {
 .descCard {
     text-align: center;    
     font-size: 16px;
+    line-height: .9;
+    letter-spacing: .5px;
+
+}
+
+/* SECTION VALOR */
+
+.botaoPreco{
+    text-decoration: none;
+    color: var(--color-pretoProfundo);
+}
+.cardPreco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 350px;
+    height: 320px;
+    border: 1px solid;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px 1px rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    background-color: var(--color-begeTatico);
+    color: var(--color-pretoProfundo);
+    letter-spacing: .7px;
+}
+
+.comparacao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    line-height: .9;
+    padding-bottom: 15px;
+}
+.precoAntigo{
+    text-decoration: line-through;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.espacePrecoNovo{
+    line-height: .9;
+    padding-bottom: 15px;
+}
+.precoNovo{
+    font-size: 60px;
+}
+
+.listaDescPreco{
+    padding-bottom: 15px;
+}
+.listaValor{
+    display: flex;
+    align-items: center;
+    line-height: .9;
+    letter-spacing: .3px;
+    gap: 10px;
+}
+.iconPreco img{
+    width: 14px;
+}
+
+.botaoSaibaMais{
+    width: 200px;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: #3bd456;
+    color: var(--color-pretoProfundo);
+    box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.5);
+    border: none;
+    letter-spacing: .7px;
+    cursor: pointer;
+    animation: pulsar 2s infinite;
+}
+@keyframes pulsar{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
 }
 
 /* BOTÃO WHATSAPP */
@@ -131,6 +214,7 @@ section {
     position: fixed;
     bottom: 20px;
     right: 20px;
+    animation: pulsar 2s infinite;
 }
 
 /* SLIDER */
@@ -241,7 +325,8 @@ section {
     color: var(--color-brancoAlvo);
 }
 .descEnd{
-    font-size: 15px;
+    font-size: 14px;
+    letter-spacing: .6px;
 }
 
 
@@ -254,6 +339,8 @@ footer{
 }
 footer p{
     margin: 5px 0;
+    font-size: 11PX;
+    letter-spacing: .6px;
     color: var(--color-brancoAlvo);
 }
 
@@ -274,6 +361,70 @@ footer p{
     .descCard {
         text-align: center;    
         font-size: 20px;
+    }
+
+    .cardPreco {
+        width: 500px;
+        height: 460px;
+        padding: 20px;
+    }
+
+    .tudoIsso{
+        font-size: 20px;
+    }
+    .comparacao{
+        gap: 5px;
+        line-height: .9;
+        padding-bottom: 30px;
+    }
+    .de{
+        font-size: 18px;
+    }
+    .precoAntigo{
+        font-size: 35px;
+    }
+
+    .introCardValor{
+        font-size: 20px;
+    }
+    .espacePrecoNovo{
+        line-height: .9;
+        padding-bottom: 30px;
+    }
+    .precoNovo{
+        font-size: 80px;
+    }
+
+    .listaDescPreco{
+        padding-bottom: 30px;
+    }
+    .listaValor{
+        display: flex;
+        align-items: center;
+        line-height: .9;
+        letter-spacing: .3px;
+        font-size: 20px;
+        gap: 10px;
+    }
+    .iconPreco img{
+        width: 20px;
+    }
+
+    .botaoSaibaMais{
+        width: 250px;
+        height: 60px;
+        font-size: 22px;
+        /* border: none; */
+        letter-spacing: .7px;
+        animation: pulsar 2s infinite;
+    }
+    @keyframes pulsar{
+        0%{
+            transform: scale(1);
+        }
+        50%{
+            transform: scale(1.1);
+        }
     }
 
     /* SLIDER */
