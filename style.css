@@ -414,17 +414,6 @@ footer p{
         width: 250px;
         height: 60px;
         font-size: 22px;
-        /* border: none; */
-        letter-spacing: .7px;
-        animation: pulsar 2s infinite;
-    }
-    @keyframes pulsar{
-        0%{
-            transform: scale(1);
-        }
-        50%{
-            transform: scale(1.1);
-        }
     }
 
     /* SLIDER */
@@ -521,6 +510,59 @@ footer p{
     .descCard {
         text-align: center;    
         font-size: 22px;
+    }
+
+    .cardPreco {
+        width: 600px;
+        height: 510px;
+        padding: 20px;
+    }
+
+    .tudoIsso{
+        font-size: 25px;
+    }
+    .comparacao{
+        gap: 5px;
+        line-height: .9;
+        padding-bottom: 40px;
+    }
+    .de{
+        font-size: 22px;
+    }
+    .precoAntigo{
+        font-size: 35px;
+    }
+
+    .introCardValor{
+        font-size: 22px;
+    }
+    .espacePrecoNovo{
+        line-height: .9;
+        padding-bottom: 30px;
+    }
+    .precoNovo{
+        font-size: 100px;
+    }
+
+    .listaDescPreco{
+        padding-bottom: 30px;
+    }
+    .listaValor{
+        display: flex;
+        align-items: center;
+        line-height: .9;
+        letter-spacing: .3px;
+        font-size: 25px;
+        gap: 10px;
+    }
+    .iconPreco img{
+        width: 22px;
+    }
+
+    .botaoSaibaMais{
+        width: 300px;
+        height: 80px;
+        font-size: 25px;
     }
 
     /* SLIDER */
