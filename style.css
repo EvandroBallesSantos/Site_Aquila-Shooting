@@ -282,6 +282,15 @@ section {
 #radio6:checked ~ .first {
     margin-left: -1750px;
 }
+#radio7:checked ~ .first {
+    margin-left: -2100px;
+}
+#radio8:checked ~ .first {
+    margin-left: -2450px;
+}
+#radio9:checked ~ .first {
+    margin-left: -2800px;
+}
 
 .navigationAuto div {
     border: 1.8px solid var(--color-verdeMilitar);
@@ -316,6 +325,17 @@ section {
 #radio6:checked ~ .navigationAuto .autoBtn6{
     background-color: var(--color-brancoAlvo);
 }
+#radio7:checked ~ .navigationAuto .autoBtn7{
+    background-color: var(--color-brancoAlvo);
+}
+#radio8:checked ~ .navigationAuto .autoBtn8{
+    background-color: var(--color-brancoAlvo);
+}
+#radio9:checked ~ .navigationAuto .autoBtn9{
+    background-color: var(--color-brancoAlvo);
+}
+/* SLIDER */
+
 
 .endLocal{
     padding: 15px 0;
@@ -454,6 +474,15 @@ footer p{
     }
     #radio6:checked ~ .first {
         margin-left: -2500px;
+    }
+    #radio7:checked ~ .first {
+        margin-left: -3000px;
+    }
+    #radio8:checked ~ .first {
+        margin-left: -3500px;
+    }
+    #radio9:checked ~ .first {
+        margin-left: -4000px;
     }
 
     .navigationAuto div {
@@ -603,6 +632,15 @@ footer p{
     }
     #radio6:checked ~ .first {
         margin-left: -3000px;
+    }
+    #radio7:checked ~ .first {
+        margin-left: -3600px;
+    }
+    #radio8:checked ~ .first {
+        margin-left: -4200px;
+    }
+    #radio9:checked ~ .first {
+        margin-left: -4800px;
     }
 
     .navigationAuto div {
